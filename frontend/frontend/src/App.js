@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // Fetch user data when the component mounts
     axios
-      .get('http://localhost:3000/getUsers')
+      .get('http://webcom-js2k.onrender.com/getUsers')
       .then((response) => {
         setUsers(response.data); // Assuming the API response is an array of user objects
       })
@@ -27,7 +27,7 @@ function App() {
 
     try {
       // Send a POST request to create a new user
-      const response = await axios.post('http://localhost:3000/createUser', {
+      const response = await axios.post('http://webcom-js2k.onrender.com/createUser', {
         name,
         age,
       });

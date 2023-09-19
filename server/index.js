@@ -43,9 +43,10 @@ app.post("/createUser",async(req,res)=>{
     const newuser = new UserModel(user);
     await newuser.save()
     res.json(user);
+    console.log(user);
 })
 
-const PORT = 3000;
+const PORT = 4000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

@@ -59,17 +59,3 @@
     transform: rotate(360deg);
   }
 }
-
-table {
-  width: 50%;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-th {
-  background-color: #f2f2f2;
-}
